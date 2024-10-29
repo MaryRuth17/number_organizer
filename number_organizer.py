@@ -5,7 +5,7 @@ while True: #loop1: asking users name and number
         name = input("Enter your name (LETTERS ONLY): ")
         if not name.isalpha():
             raise ValueError ("letters only")
-        
+ 
         num_range = {
             "1-10" : 0,
             "11-20" : 0,
@@ -42,6 +42,7 @@ while True: #loop1: asking users name and number
         print("21-30:", num_range["21-30"])
         print("31-40:", num_range["31-40"])
         print("41-50:", num_range["41-50"])
+        break
 
     except ValueError as error:
         print ("invalid:", error)
