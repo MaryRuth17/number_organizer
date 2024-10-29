@@ -16,7 +16,7 @@ while True: #loop1: asking users name and number
             
         while True: #loop2: for user entering number
             try: 
-                num = int(input("Enter a number (1 and 50 only): "))
+                num = int(input("Enter a number (1 to 50 only): "))
                 if (num>=1) and (num<=50): #putting the numbers in range using if else
                     if (num>=1) and (num<=10):
                         num_range["1-10"] += 1 
