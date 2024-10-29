@@ -1,13 +1,11 @@
 #setting up an array with ranges
-num_range = {
-        "1-10" : 0,
-        "11-20" : 0,
-        "21-30" : 0,
-        "31-40" : 0,
-        "41-50" : 0
-    }
+num_range = {}
 
-# ask user to input numbers
+# ask user to input numbers and name
+name = input("Enter your name (letters only): ")
+if not name.isalpha():
+    print("invalid name")
+
 num = int(input("Enter a number (1 and 50 only): "))
 if (num>=1) and (num<=50): #putting the numbers in range using if else
     if (num>=1) and (num<=10):
@@ -22,3 +20,11 @@ if (num>=1) and (num<=50): #putting the numbers in range using if else
         num_range["41-50"] += 1
 else:
     print("invalid")
+
+    num_range[name] = {
+        "1-10" : 0,
+        "11-20" : 0,
+        "21-30" : 0,
+        "31-40" : 0,
+        "41-50" : 0
+    }
